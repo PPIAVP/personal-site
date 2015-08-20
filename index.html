@@ -9,10 +9,18 @@
 		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.3/material.indigo-pink.min.css">
 		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.3/material.min.js"></script>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <style>
-      .transparent {
+      .transparent-bg {
         background: url('images/headerbg.jpg') center / cover;
+      }
+      .mdl-card {
+        width: 100%;
+        max-height: 600px;
+      }
+      .mdl-card__media > img {
+        width: 100%;
       }
     </style>
 
@@ -20,8 +28,9 @@
 
 	<body>
 
-    <div class="mdl-layout mdl-js-layout transparent">
-      <header class="mdl-layout__header mdl-layout__header--scroll">
+    <div class="mdl-layout mdl-js-layout transparent-bg">
+
+<!--       <header class="mdl-layout__header mdl-layout__header--transparent">
         <div class="mdl-layout-icon"></div>
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">David Dvorak</span>
@@ -33,7 +42,8 @@
           </nav>
         </div>
       </header>
-      <div class="mdl-layout__drawer">
+ -->
+<!--       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">David Dvorak</span>
           <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="#">About</a>
@@ -41,68 +51,117 @@
             <a class="mdl-navigation__link" href="#">Contact</a>
           </nav>
       </div>
-      
+ -->      
       <main class="mdl-layout__content">
 
         <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col">
-          </div>
-          <div class="mdl-cell mdl-cell--4-col">
-            <div class="mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
-               alt="" style="padding:10px;">
-              </div>
-              <div class="mdl-card__supporting-text">
-                Auckland Sky Tower, taken March 24th, 2014
-              </div>
-              <div class="mdl-card__supporting-text">
-              The Sky Tower is an observation and telecommunications tower located in Auckland,
-              New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
-              in the Southern Hemisphere.
-              </div>
-            </div>
 
+          <div class="mdl-cell mdl-cell--3-col">
           </div>
-          <div class="mdl-cell mdl-cell--2-col">
+
+          <div class="mdl-cell mdl-cell--3-col">
+
+            <div class="mdl-card mdl-shadow--4dp">
+               <div class="mdl-card__media">
+                  <img src="images/profile.jpg">
+               </div>
+                <div class="mdl-card__title">
+                  <h1 class="mdl-card__title-text">David Dvorak</h1>
+                </div>
+                <div class="mdl-card__supporting-text">
+                  Look at how much I love cats!
+                </div>
+            </div>
           </div>
-          <div class="mdl-cell mdl-cell--2-col">
+
+          <div class="mdl-cell mdl-cell--3-col">
           </div>
+
+          <div class="mdl-cell mdl-cell--3-col">
+          </div>
+
         </div>
 
         <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col">
+
+          <div class="mdl-cell mdl-cell--3-col">
           </div>
-          <div class="mdl-cell mdl-cell--4-col">
+
+          <div class="mdl-cell mdl-cell--6-col">
+
+            <div class="mdl-card mdl-shadow--4dp" style="width:660px">
+               <div class="mdl-card__media">
+                  <img src="images/emory.jpg">
+               </div>
+                <div class="mdl-card__supporting-text">
+                  I studied Mathematics and Computer Science at Emory
+                </div>
+            </div>
+
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col">
+          </div>
+
+        </div>
+
+        <div class="mdl-grid">
+
+          <div class="mdl-cell mdl-cell--3-col">
             <div class="mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
-               alt="" style="padding:10px;">
-              </div>
               <div class="mdl-card__supporting-text">
-                Auckland Sky Tower, taken March 24th, 2014
+                <div style="float:left">OS X</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+                <div style="float:left">Windows</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><br>
+                <div style="float:left">Android</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+                <div style="float:left">Unix</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div><br>
+
               </div>
-              <div class="mdl-card__supporting-text">
-              The Sky Tower is an observation and telecommunications tower located in Auckland,
-              New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
-              in the Southern Hemisphere.
+              <div class="mdl-card__title">
+                <h1 class="mdl-card__title-text">Operating Systems</h1>
               </div>
             </div>
           </div>
-          <div class="mdl-cell mdl-cell--4-col">
+
+          <div class="mdl-cell mdl-cell--3-col">
             <div class="mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__media"><img src="skytower.jpg" width="173" height="157" border="0"
-               alt="" style="padding:10px;">
-              </div>
               <div class="mdl-card__supporting-text">
-                Auckland Sky Tower, taken March 24th, 2014
+                <div style="float:left">Java</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+                <div style="float:left">Python</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+                <div style="float:left">Javascript</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+                <div style="float:left">HTML</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
               </div>
-              <div class="mdl-card__supporting-text">
-              The Sky Tower is an observation and telecommunications tower located in Auckland,
-              New Zealand. It is 328 metres (1,076 ft) tall, making it the tallest man-made structure
-              in the Southern Hemisphere.
+              <div class="mdl-card__title">
+                <h1 class="mdl-card__title-text">Languages</h1>
               </div>
             </div>
           </div>
-          <div class="mdl-cell mdl-cell--2-col">
+
+          <div class="mdl-cell mdl-cell--3-col">
+            <div class="mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__supporting-text">
+                <div style="float:left">Git</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+                <div style="float:left">Adobe Photoshop</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+                <div style="float:left">Adobe Illustrator</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+                <div style="float:left">???</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+              </div>
+              <div class="mdl-card__title">
+                <h1 class="mdl-card__title-text">Software</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--3-col">
+            <div class="mdl-card mdl-shadow--4dp">
+              <div class="mdl-card__supporting-text">
+                <div style="float:left">???</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+                <div style="float:left">???</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+                <div style="float:left">???</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+                <div style="float:left">???</div><div style="float:right"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></div><br>
+              </div>
+              <div class="mdl-card__title">
+                <h1 class="mdl-card__title-text">Category 4</h1>
+              </div>
+            </div>
           </div>
 
         </div>
