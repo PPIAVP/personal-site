@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>David Dvorak</title>
 
-		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.3/material.blue-pink.min.css">
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.3/material.indigo-pink.min.css">
 		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.3/material.min.js"></script>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -22,6 +22,28 @@
       .mdl-card__media > img {
         width: 100%;
       }
+      .mdl-card__media > a > img {
+        width: 100%;
+      }
+
+      .email-form {
+        width: 100%;
+      }
+      .social-btn {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        margin: 0 16px;
+        width: 24px;
+        height: 24px;
+        opacity: 0.46;
+        border-radius: 2px;
+        color: white;
+      }
+      .social-btn > a {
+        color: white;
+      }
     </style>
 
 	</head>
@@ -29,75 +51,68 @@
 	<body>
 
     <div class="mdl-layout mdl-js-layout transparent-bg">
-
-      <header class="mdl-layout__header mdl-layout__header">
+      <!-- Header -->
+      <header class="mdl-layout__header mdl-layout__header--scroll">
         <div class="mdl-layout-icon"></div>
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">David Dvorak</span>
           <div class="mdl-layout-spacer"></div>
           <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="#">About</a>
-            <a class="mdl-navigation__link" href="#">Experience</a>
-            <a class="mdl-navigation__link" href="#">Projects</a>
-            <a class="mdl-navigation__link" href="#">Contact</a>
+            <a class="mdl-navigation__link" href="#about">About</a>
+            <a class="mdl-navigation__link" href="#experience">Experience</a>
+            <a class="mdl-navigation__link" href="#projects">Projects</a>
+            <a class="mdl-navigation__link" href="#contact">Contact</a>
           </nav>
         </div>
       </header>
 
+      <!-- Drawer -->
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">David Dvorak</span>
           <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="#">About</a>
-            <a class="mdl-navigation__link" href="#">Experience</a>
-            <a class="mdl-navigation__link" href="#">Projects</a>
-            <a class="mdl-navigation__link" href="#">Contact</a>
+            <a class="mdl-navigation__link" href="#about">About</a>
+            <a class="mdl-navigation__link" href="#experience">Experience</a>
+            <a class="mdl-navigation__link" href="#projects">Projects</a>
+            <a class="mdl-navigation__link" href="#contact">Contact</a>
           </nav>
       </div>
       
       <main class="mdl-layout__content">
 
+        <!-- Intro -->
         <div class="mdl-grid">
-
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-phone mdl-cell--hide-tablet">
-          </div>
-
+          <!-- Spacer -->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-phone mdl-cell--hide-tablet"></div>
+          <!-- Intro -->
           <div class="mdl-cell mdl-cell--3-col">
-
             <div class="mdl-card mdl-shadow--4dp">
-               <div class="mdl-card__media">
-                  <img src="images/profile.jpg">
-               </div>
-                <div class="mdl-card__title">
-                  <h1 class="mdl-card__title-text">David Dvorak</h1>
-                </div>
-                <div class="mdl-card__supporting-text">
-                  Look at how much I love cats!
-                </div>
+              <div class="mdl-card__media">
+                <img src="images/profile.jpg">
+              </div>
+              <div class="mdl-card__title">
+                <h1 class="mdl-card__title-text">David Dvorak</h1>
+              </div>
+              <div class="mdl-card__supporting-text">
+                Look at how much I love cats!
+              </div>
             </div>
           </div>
-
-          <div class="mdl-cell mdl-cell--3-col">
-          </div>
-
-          <div class="mdl-cell mdl-cell--3-col">
-          </div>
-
         </div>
 
-        <div class="mdl-grid">
-
+        <!-- About -->
+        <div class="mdl-grid" id="about">
+          <!-- Education -->
           <div class="mdl-cell mdl-cell--6-col">
             <div class="mdl-card mdl-shadow--4dp">
                <div class="mdl-card__media">
                   <img src="images/emory.jpg">
                </div>
                 <div class="mdl-card__supporting-text">
-                  I studied Mathematics and Computer Science at Emory
+                  Mathematics and Computer Science at Emory University
                 </div>
             </div>
-
           </div>
-
+          <!-- Background 1 -->
           <div class="mdl-cell mdl-cell--3-col">
             <div class="mdl-card mdl-shadow--4dp">
                <div class="mdl-card__media">
@@ -108,7 +123,7 @@
                 </div>
             </div>
           </div>
-
+          <!-- Background 2 -->
           <div class="mdl-cell mdl-cell--3-col">
             <div class="mdl-card mdl-shadow--4dp">
                <div class="mdl-card__media">
@@ -119,12 +134,11 @@
                 </div>
             </div>
           </div>
-
-
         </div>
 
-        <div class="mdl-grid">
-
+        <!-- Experience -->
+        <div class="mdl-grid" id="experience">
+          <!-- Experience 1 -->
           <div class="mdl-cell mdl-cell--3-col">
             <div class="mdl-card mdl-shadow--4dp">
               <div class="mdl-card__supporting-text">
@@ -142,7 +156,7 @@
               </div>
             </div>
           </div>
-
+          <!-- Experience 2 -->
           <div class="mdl-cell mdl-cell--3-col">
             <div class="mdl-card mdl-shadow--4dp">
               <div class="mdl-card__supporting-text">
@@ -157,7 +171,7 @@
               </div>
             </div>
           </div>
-
+          <!-- Experience 3 -->
           <div class="mdl-cell mdl-cell--3-col">
             <div class="mdl-card mdl-shadow--4dp">
               <div class="mdl-card__supporting-text">
@@ -171,7 +185,7 @@
               </div>
             </div>
           </div>
-
+          <!-- Experience 4 -->
           <div class="mdl-cell mdl-cell--3-col">
             <div class="mdl-card mdl-shadow--4dp">
               <div class="mdl-card__supporting-text">
@@ -185,29 +199,34 @@
               </div>
             </div>
           </div>
-
         </div>
 
-        <div class="mdl-grid">
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-phone mdl-cell--hide-tablet">
-          </div>
+        <!-- Projects -->
+        <div class="mdl-grid" id="projects">
+          <!-- Spacer -->
+          <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-phone mdl-cell--hide-tablet"></div>
+          <!-- Github -->
           <div class="mdl-cell mdl-cell--3-col">
             <div class="mdl-card dml-shadow--4dp">
               <div class="mdl-card__media">
-                <a href="https://github.com/PPIAVP" target="_blank"><img src="images/300x300.jpg"></a>
+                <a href="https://github.com/PPIAVP" target="_blank"><img src="images/github.png"></a>
               </div>
               <div class="mdl-card__title">
                 <a href="https://github.com/PPIAVP" target="_blank"><div class="mdl-card__title-text">GitHub</div></a>
               </div>
               <div class="mdl-card__supporting-text">
                 Visit my GitHub page to view this and some other projects that I've worked on!
+                <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                  <i class="material-icons">arrow_forward</i>
+                </button>
               </div>
             </div>
           </div>
+          <!-- Infinite Smiles -->
           <div class="mdl-cell mdl-cell--3-col">
             <div class="mdl-card dml-shadow--4dp">
               <div class="mdl-card__media">
-                <a href="http://ddvorak.com/infinitesmiles" target="_blank"><img src="images/300x300.jpg"></a>
+                <a href="http://ddvorak.com/infinitesmiles" target="_blank"><img src="images/infinitesmiles.jpg"></a>
               </div>
               <div class="mdl-card__title">
                 <a href="http://ddvorak.com/infinitesmiles" target="_blank"><div class="mdl-card__title-text">Infinite Smiles</div></a>
@@ -217,90 +236,91 @@
               </div>
             </div>
           </div>
-          <div class="mdl-cell mdl-cell--3-col">
-          </div>
         </div>
 
-        <div class="mdl-grid">
-
+        <!-- Contact -->
+        <div class="mdl-grid" id="contact">
+          <!-- Email Form -->
           <div class="mdl-cell mdl-cell--6-col">
             <div class="mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__supporting-text">
-                <div class="mdl-textfield mdl-js-textfield">
-                  <input class="mdl-textfield__input" type="text" pattern="[0-9]*" id="email" />
-                  <label class="mdl-textfield__label" for="phone">Email</label>
-                  <span class="mdl-textfield__error">Please enter a valid email address</span>
+              <form action="emailform.php" method="post">
+                <!-- Name -->
+                <div class="mdl-card__supporting-text">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label email-form">
+                    <input class="mdl-textfield__input" type="text" name="name"/>
+                    <label class="mdl-textfield__label" for="phone">Name</label>
+                  </div>
+                  <!-- Email Address -->
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label email-form">
+                    <input class="mdl-textfield__input" type="email" name="email" />
+                    <label class="mdl-textfield__label" for="phone">Email</label>
+                    <span class="mdl-textfield__error">Please enter a valid email address</span>
+                  </div>
+                  <!-- Email Message -->
+                  <div class="mdl-textfield mdl-js-textfield email-form">
+                    <textarea class="mdl-textfield__input" type="text" rows= "3" name="message"></textarea>
+                    <label class="mdl-textfield__label" for="email">Write me a message!</label>
+                  </div>
                 </div>
-              </div>
-              <div class="mdl-card__action">
-                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                  <i class="material-icons">Send email</i>
-                </button>
-              </div>
-
-              <div class="mdl-card__supporting-text">
-                I studied Mathematics and Computer Science at Emory
-              </div>
+                <!-- Send Button -->
+                <div class="mdl-card__actions mdl-card--border">
+                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit" name="submit">
+                    <i class="material-icons">send</i> Send Email
+                  </button>
+                </div>
+              </form>
             </div>
-
           </div>
-
+          <!-- Contact 1 -->
           <div class="mdl-cell mdl-cell--3-col">
             <div class="mdl-card mdl-shadow--4dp">
              <div class="mdl-card__media">
                 <img src="images/300x300.jpg">
              </div>
               <div class="mdl-card__supporting-text">
-                Yay background stuff??
+                LinkedIn and resume
               </div>
             </div>
           </div>
-
+          <!-- Contact 2 -->
           <div class="mdl-cell mdl-cell--3-col">
             <div class="mdl-card mdl-shadow--4dp">
              <div class="mdl-card__media">
                 <img src="images/300x300.jpg">
              </div>
               <div class="mdl-card__supporting-text">
-                And even more about me!
+                Social media links
               </div>
             </div>
           </div>
-
-
         </div>
-
 
       </main>
 
+      <!-- Footer -->
       <footer class="mdl-mini-footer">
+        <!-- Left Footer -->
         <div class="mdl-mini-footer__left-section">
           <div class="mdl-logo">David Dvorak</div>
-<!--           <ul class="mdl-mini-footer__link-list">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul class="mdl-mini-footer__link-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
- -->        </div>
+        </div>
+        <!-- Right Footer -->
         <div class="mdl-mini-footer__right-section">
-          <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
-            <span class="visuallyhidden">Twitter</span>
+          <!-- GitHub -->
+          <button class="mdl-mini-footer--social-btn social-btn">
+            <a href="https://github.com/PPIAVP" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
           </button>
           <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
             <span class="visuallyhidden">Facebook</span>
           </button>
-          <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
-            <span class="visuallyhidden">Google Plus</span>
         </div>
       </footer>
 
     </div> <!-- mdl-layout mdl-js-layout -->
-
-
-
-
-
-
 	</body>
-
 </html>
