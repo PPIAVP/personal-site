@@ -1,407 +1,185 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="description" content="Personal website for David Dvorak">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>David Dvorak</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>David Dvorak</title>
 
-		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.3/material.indigo-pink.min.css">
-		<script src="https://storage.googleapis.com/code.getmdl.io/1.0.3/material.min.js"></script>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-    <style>
-      .transparent-bg {
-        background: url('images/background.jpg') center / cover;
-      }
-      .mdl-card {
-        width: 100%;
-        max-height: 600px;
-      }
-      .mdl-card__media > img {
-        width: 100%;
-      }
-      .mdl-card__media > a > img {
-        width: 100%;
-      }
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
 
-      .email-form {
-        width: 100%;
-      }
-      .social-btn {
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-color: transparent;
-        margin: 0 16px;
-        width: 24px;
-        height: 24px;
-        opacity: 0.46;
-        border-radius: 2px;
-        color: white;
-      }
-      .social-btn > a {
-        color: white;
-      }
-    </style>
-	</head>
-
-	<body>
-    <div class="mdl-layout mdl-js-layout transparent-bg">
-      <!-- Header -->
-      <header class="mdl-layout__header mdl-layout__header">
-        <div class="mdl-layout-icon"></div>
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">David Dvorak</span>
-          <div class="mdl-layout-spacer"></div>
-          <nav class="mdl-navigation">
-            <a class="mdl-navigation__link" href="#about">About</a>
-            <a class="mdl-navigation__link" href="#experience">Experience</a>
-            <a class="mdl-navigation__link" href="#projects">Projects</a>
-            <a class="mdl-navigation__link" href="#contact">Contact</a>
-          </nav>
-        </div>
+      <header>
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-main" aria-expanded="false">
+                <span class="sr-only">Toggle Navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="">
+                <img src="http://lorempixel.com/g/24/24" alt="Logo">
+              </a>
+              <a class="navbar-brand" href="">David Dvorak</a>
+              <p class="navbar-text">Software Developer</p>
+            </div>
+             <!-- Collect the nav links, forms, and other content for toggling -->
+             <div class="collapse navbar-collapse" id="navbar-main">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+             </div>
+          </div>
+        </nav>
       </header>
 
-      <main class="mdl-layout__content">
+      <!-- ABOUT -->
+      <section>
+        <span class="anchor" id="about"></span>
+        <h2>About</h2>
+        <div class="row">
+          <div class="col-sm-3">
+            <img class="img-responsive center-block" src="img/profile_150.jpg" srcset="img/profile_150.jpg 150w, img/profile_300.jpg 300w, img/profile_600.jpg 600w" sizes="(min-width: screen-sm-min) 100vw, 370px" alt="David Dvorak profile image">
+          </div>
+          <div class="col-sm-9">
+            <p>I live in <span class="emph-text">Atlanta, GA</span>.</p>
+            <p>I'm a young <span class="emph-text"><a href="http://www.emory.edu/" target="_blank">Emory University</a></span> alumn who studied <span class="emph-text"><a href="http://mathcs.emory.edu/" target="_blank">Mathematics and Computer Science</a></span>.</p>
+            <p>I've worked for the past year as a Residence Hall Director for <span class="emph-text"><a href="http://www.emory.edu/HOUSING/" target="_blank">Residence Life</a></span> and the most recently as a Conference Coordinator for <span class="emph-text"><a href="http://conferences.emory.edu/" target="_blank">Conference Services</a></span> at Emory University.</p>
+            <p>I'm looking to get my professional start as a <span class="emph-text">software developer</span> in Atlanta.</p>
+          </div>
+        </div>
+        
+      </section><!-- /#about -->
+      
+      <!-- EXPERIENCE -->
+      <section>
+        <span class="anchor" id="experience"></span>
+        <h2>Experience</h2>
+        <!-- TODO: Fill in resume from FEND P2 -->
+        <p>Poop in litter box, scratch the walls. Bathe private parts with tongue then lick owner's face leave fur on owners clothes for immediately regret falling into bathtub but sit in box. Curl into a furry donut refuse to leave cardboard box stand in front of the computer screen stare out the window tuxedo cats always looking dapper and favor packaging over toy hunt anything that moves. Find empty spot in cupboard and sleep all day have secret plans loves cheeseburgers meow all night having their mate disturbing sleeping humans eat grass, throw it back up so cat is love, cat is life. Knock dish off table head butt cant eat out of my own dish always hungry ignore the squirrels, you'll never catch them anyway for chase dog then run away. Poop on grasses spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce caticus cuteicus but thug cat , but drink water out of the faucet stare out the window for inspect anything brought into the house. Destroy couch tuxedo cats always looking dapper. Shove bum in owner's face like camera lens. I am the best. Chew on cable chase ball of string or ears back wide eyed meowwww for drink water out of the faucet. Kick up litter run in circles intrigued by the shower. Chase ball of string sun bathe, but stick butt in face, for fall over dead (not really but gets sypathy) spit up on light gray carpet instead of adjacent linoleum, but i am the best yet find something else more interesting. Cat is love, cat is life cat snacks stare out the window. Hide when guests come over intently stare at the same spot, and loves cheeseburgers or ears back wide eyed, so why must they do that, and human is washing you why halp oh the horror flee scratch hiss bite yet leave dead animals as gifts. Knock over christmas tree spit up on light gray carpet instead of adjacent linoleum so fall over dead (not really but gets sypathy) for stick butt in face, but immediately regret falling into bathtub for nap all day spit up on light gray carpet instead of adjacent linoleum. Hunt by meowing loudly at 5am next to human slave food dispenser cat is love, cat is life, behind the couch, for pooping rainbow while flying in a toasted bread costume in space and missing until dinner time i like big cats and i can not lie purr for no reason. Poop on grasses ignore the squirrels, you'll never catch them anyway throwup on your pillow, yet find something else more interesting, and chase red laser dot make muffins. Flop over. Hunt by meowing loudly at 5am next to human slave food dispenser mew yet refuse to drink water except out of someone's glass pooping rainbow while flying in a toasted bread costume in space put toy mouse in food bowl run out of litter box at full speed and play riveting piece on synthesizer keyboard why must they do that. Pee in the shoe fall over dead (not really but gets sypathy) climb a tree, wait for a fireman jump to fireman then scratch his face. See owner, run in terror white cat sleeps on a black shirt so use lap as chair knock dish off table head butt cant eat out of my own dish and jump off balcony, onto stranger's head for asdflkjaertvlkjasntvkjn (sits on keyboard). Chase red laser dot hunt by meowing loudly at 5am next to human slave food dispenser. Poop in the plant pot. I am the best chase ball of string for cough furball kitty loves pigs. </p>
+      </section><!-- /#experience -->
 
-        <!-- Intro -->
-        <div class="mdl-grid">
-          <!-- Spacer -->
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-phone mdl-cell--hide-tablet"></div>
-          <!-- Intro -->
-          <div class="mdl-cell mdl-cell--3-col">
-            <div class="mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__media">
-                <img src="images/profile.jpg">
+      <!-- PORTFOLIO -->
+      <section>
+        <span class="anchor" id="portfolio"></span>
+        <h2>Portfolio</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="thumbnail">
+              <img class="img-responsive img-rounded" src="img/personalsite.png" srcset="img/personalsite_2x.jpg 2x, img/personalsite.jpg 350w" alt="Personal site image">
+              <div class="caption">
+                <h3>Personal site</h3>
+                <p>Built on Twitter Bootstrap as a practice in responsive design. </p>
+                <p><a href="https://github.com/PPIAVP/ppiavp.github.io" class="btn btn-default" role="button">Github</a></p>
               </div>
-              <div class="mdl-card__supporting-text">
-                I'm a young software developer looking to get a start in Atlanta, GA. Take a look and reach out to me!
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="thumbnail">
+              <img class="img-responsive img-rounded" src="img/infinitesmiles.jpg" srcset="img/infinitesmiles_2x.jpg 2x, img/infinitesmiles.jpg 350w" alt="Infinite Smiles logo">
+              <div class="caption">
+                <h3>Infinite Smiles</h3>
+                <p>Using WordPress to create a new website for a dentist office.</p>
+                <p><a href="http://ddvorak.com/infinitesmiles/" class="btn btn-primary" role="button">Live Site</a></p>
               </div>
-              <div class="mdl-card__title mdl-card--border">
-                <h1 class="mdl-card__title-text">David Dvorak</h1>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="thumbnail">
+              <img class="img-responsive img-rounded" src="img/arcadegame.jpg" srcset="img/arcadegame_2x.jpg 2x, img/arcadegame.jpg 350w" alt="Arcade Game image">
+              <div class="caption">
+                <h3>Arcade Game</h3>
+                <p>A twist on the classic Frogger game, built using JavaScript and HTML Canvas.</p>
+                <p><a href="#" class="btn btn-primary" role="button">Live Site</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="thumbnail">
+              <img class="img-responsive img-rounded" src="http://lorempixel.com/g/350/350" alt="...">
+              <div class="caption">
+                <h3>Neighborhood Map</h3>
+                <p>...</p>
+                <p><a href="#" class="btn btn-primary" role="button">Live Site</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="thumbnail">
+              <img class="img-responsive img-rounded" src="http://lorempixel.com/g/350/350" alt="...">
+              <div class="caption">
+                <h3>Health Tracker</h3>
+                <p>...</p>
+                <p><a href="#" class="btn btn-primary" role="button">Live Site</a> <a href="#" class="btn btn-default" role="button">Github</a></p>
               </div>
             </div>
           </div>
         </div>
+      </section><!-- /#portfolio -->
 
-        <!-- About -->
-        <div class="mdl-grid" id="about">
-          <!-- Education -->
-          <div class="mdl-cell mdl-cell--6-col">
-            <div class="mdl-card mdl-shadow--4dp">
-               <div class="mdl-card__media">
-                  <img src="images/emory.jpg">
-               </div>
-                <div class="mdl-card__supporting-text">
-                  Studied Mathematics and Computer Science at Emory University
+      <!-- CONTACT -->
+      <section>
+        <span class="anchor" id="contact"></span>
+        <h2>Contact</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>Find me online</h3>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/daviddvorakemory" target="_blank"><i class="fa fa-linkedin-square fa-5x"></i></a>
+              <a href="https://github.com/PPIAVP" target="_blank"><i class="fa fa-github-square fa-5x"></i></a>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <h3>Email me!</h3>
+            <form role="form" id="contact-form">
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <input type="text" class="form-control" id="name" placeholder="Name" required>
                 </div>
-            </div>
-          </div>
-          <!-- Background 1 -->
-          <div class="mdl-cell mdl-cell--3-col">
-            <div class="mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title mdl-card--border">
-                  <h2 class="mdl-card__title-text">Computer Science coursework</h2>
+                <div class="form-group col-sm-6">
+                  <input type="text" class="form-control" id="email" placeholder="Email" required>
+                </div>
               </div>
-              <div class="mdl-card__supporting-text">
-                <ul>
-                  <li>Data Structures and Algorithms</li>
-                  <li>Assembly Programming</li>
-                  <li>Discrete Structures</li>
-                  <li>Database Systems</li>
-                  <li>Digital Electronics and Microprocessors</li>
-                  <li>Systems Programming</li>
-                  <li>Theory of Computing</li>
-                </ul>
+              <div class="form-group">
+                <textarea class="form-control" id="message" rows="5" placeholder="Message" required></textarea>
               </div>
-            </div>
-          </div>
-          <!-- Background 2 -->
-          <div class="mdl-cell mdl-cell--3-col">
-            <div class="mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title mdl-card--border">
-                  <h2 class="mdl-card__title-text">Math coursework</h2>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <ul>
-                  <li>Calculus: I, II</li>
-                  <li>Multivariable Calculus</li>
-                  <li>Linear Algebra</li>
-                  <li>Foundations of Mathematics</li>
-                  <li>Numerical Analysis</li>
-                </ul>
-              </div>
-            </div>
+              <button type="submit" class="btn btn-success btn-md pull-right" id="form-submit">Send Email</button>
+              <div id="msgSubmit" class="alert alert-success hidden" role="alert"><strong>Thank you!</strong> Your email has sent.</div>
+            </form>
           </div>
         </div>
+        
+      </section><!-- /#contact -->
 
-        <!-- Experience -->
-        <div class="mdl-grid" id="experience">
-          <!-- Experience 1 -->
-          <div class="mdl-cell mdl-cell--3-col">
-            <div class="mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title mdl-card--border">
-                <h1 class="mdl-card__title-text">Languages</h1>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <div style="float:left">Java</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                </div><br>
-                <div style="float:left">Python</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                </div><br>
-                <div style="float:left">Ruby/Rails</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                </div><br>
-                <div style="float:left">C</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Experience 2 -->
-          <div class="mdl-cell mdl-cell--3-col">
-            <div class="mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title mdl-card--border">
-                <h1 class="mdl-card__title-text">Languages</h1>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <div style="float:left">HTML</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                </div><br>
-                <div style="float:left">CSS</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                </div><br>
-                <div style="float:left">Javascript</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                </div><br>
-                <div style="float:left">SQL</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Experience 3 -->
-          <div class="mdl-cell mdl-cell--3-col">
-            <div class="mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title mdl-card--border">
-                <h1 class="mdl-card__title-text">Operating Systems</h1>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <div style="float:left">OS X</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                </div><br>
-                <div style="float:left">Windows</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                </div><br>
-                <div style="float:left">Android</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                </div><br>
-                <div style="float:left">UNIX</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Experience 4 -->
-          <div class="mdl-cell mdl-cell--3-col">
-            <div class="mdl-card mdl-shadow--4dp">
-              <div class="mdl-card__title mdl-card--border">
-                <h1 class="mdl-card__title-text">Software</h1>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <div style="float:left">Git</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                </div><br>
-                <div style="float:left">Adobe Photoshop</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                </div><br>
-                <div style="float:left">Adobe Illustrator</div>
-                <div style="float:right">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Projects -->
-        <div class="mdl-grid" id="projects">
-          <!-- Spacer -->
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-phone mdl-cell--hide-tablet"></div>
-          <!-- Github -->
-          <div class="mdl-cell mdl-cell--3-col">
-            <div class="mdl-card dml-shadow--4dp">
-              <div class="mdl-card__media">
-                <a href="https://github.com/PPIAVP" target="_blank"><img src="images/github.png"></a>
-              </div>
-              <div class="mdl-card__title">
-                <a href="https://github.com/PPIAVP" target="_blank"><div class="mdl-card__title-text">GitHub</div></a>
-              </div>
-              <div class="mdl-card__supporting-text">
-                Visit my GitHub page to view this and some other projects that I've worked on!
-              </div>
-            </div>
-          </div>
-          <!-- Infinite Smiles -->
-          <div class="mdl-cell mdl-cell--3-col">
-            <div class="mdl-card dml-shadow--4dp">
-              <div class="mdl-card__media">
-                <a href="http://ddvorak.com/infinitesmiles" target="_blank"><img src="images/infinitesmiles.jpg"></a>
-              </div>
-              <div class="mdl-card__title">
-                <a href="http://ddvorak.com/infinitesmiles" target="_blank"><div class="mdl-card__title-text">Infinite Smiles</div></a>
-              </div>
-              <div class="mdl-card__supporting-text">
-                Currently creating a new website for a dentist's practice locating in Johns Creek, GA.
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Contact -->
-        <div class="mdl-grid" id="contact">
-          <!-- Spacer -->
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-phone mdl-cell--hide-tablet"></div>
-          <!-- Email Form -->
-          <div class="mdl-cell mdl-cell--6-col">
-            <div class="mdl-card mdl-shadow--4dp">
-              <form action="emailform.php" method="post">
-                <!-- Name -->
-                <div class="mdl-card__supporting-text">
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label email-form">
-                    <input class="mdl-textfield__input" type="text" name="name"/>
-                    <label class="mdl-textfield__label" for="phone">Name</label>
-                  </div>
-                  <!-- Email Address -->
-                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label email-form">
-                    <input class="mdl-textfield__input" type="email" name="email" />
-                    <label class="mdl-textfield__label" for="phone">Email</label>
-                    <span class="mdl-textfield__error">Please enter a valid email address</span>
-                  </div>
-                  <!-- Email Message -->
-                  <div class="mdl-textfield mdl-js-textfield email-form">
-                    <textarea class="mdl-textfield__input" type="text" rows= "3" name="message"></textarea>
-                    <label class="mdl-textfield__label" for="email">Write me a message!</label>
-                  </div>
-                </div>
-                <!-- Send Button -->
-                <div class="mdl-card__actions mdl-card--border">
-                  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit" name="submit">
-                    <i class="material-icons">send</i> Send Email
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </main>
+    </div><!-- /.container -->
 
-      <!-- Footer -->
-      <footer class="mdl-mini-footer">
-        <!-- Left Footer -->
-        <div class="mdl-mini-footer__left-section">
-          <div class="mdl-logo">David Dvorak</div>
-          <ul class="mdl-mini-footer__link-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <!-- Right Footer -->
-        <div class="mdl-mini-footer__right-section">
-          <!-- LinkedIn -->
-          <button class="mdl-mini-footer--social-btn social-btn">
-            <a href="https://www.linkedin.com/in/daviddvorakemory" target="_blank"><i class="fa fa-linkedin fa-3x"></i></a>
-          </button>
-          <!-- GitHub -->
-          <button class="mdl-mini-footer--social-btn social-btn">
-            <a href="https://github.com/PPIAVP" target="_blank"><i class="fa fa-github fa-3x"></i></a>
-          </button>
-          <!-- CodePen -->
-          <button class="mdl-mini-footer--social-btn social-btn">
-            <a href="http://codepen.io/PPIAVP/" target="_blank"><i class="fa fa-codepen fa-3x"></i></a>
-          </button>
-        </div>
-      </footer>
-
-    </div> <!-- mdl-layout mdl-js-layout -->
-	</body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
