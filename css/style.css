@@ -1,0 +1,29 @@
+* {
+ /*   border: 1px solid red !important;*/
+}
+
+body {
+  padding: 50px 0 50px 0; /* For fixed header bar */
+  position: relative; /* For scrollspy */
+  background-color: #e7e7e7;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -50px;
+  /*visibility: hidden;*/
+}
+
+.emph-text {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.emph-text > a {
+  color: black;
+}
+
+.social-icons {
+  text-align: center;
+}
