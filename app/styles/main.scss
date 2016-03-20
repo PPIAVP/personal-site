@@ -1,7 +1,10 @@
 $icon-font-path: '../fonts/';
+$fa-font-path: "/bower_components/font-awesome/fonts/";
+
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
 .browserupgrade {
@@ -70,7 +73,7 @@ body {
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 730px;
+    // max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
@@ -89,5 +92,24 @@ body {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+}
+
+// Custom SASS
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .vert-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+  }
+}
+
+.social-icons {
+  display: block;
+  span {
+    padding-right: 20px;
   }
 }
