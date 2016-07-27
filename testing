@@ -1,0 +1,14 @@
+I’m looking for an Android client Proof of Concept mobile application that enables creation of a dynamic view which contains data entry fields.  The dynamic view is generated from a JSON string, which may contain multiple views.  For example, View A and View B.  All the data entry field rules on View A must be enforced before the user can navigate to View B.  Each View has its own set of data entry fields of which can be marked as mandatory or optional.   There should be a Navigation controller tab or other at the bottom of each view that allows the user to navigate between the views or Cancel.
+
+For example:
+1.	Main view would have a button to start data entry flow and display View A.
+2.	View A would have Cancel and Next buttons.  Cancel exits the flow from data entry.  Next would navigate the user to View B.
+3.	View B would have Previous, Cancel and Done buttons.  Previous would navigate the user to View A.  Cancel exits the flow from data entry.  Done would complete the data entry flow.
+4.	Each View should have a mixture of data entry fields, mandatory and optional.  Also, the data type of these fields within all views should contain the most commonly used data types such as Text, Date, Boolean, Single Choice (radio button) or Multiple Choice (checkbox). 
+5.	Each View should implement a data entry audit mechanism to display a Prompt when any of the data entry rules are not enforced, i.e.; mandatory or optional and not allow the user to navigate to the next step in the data entry flow.
+6.	All data entry Views and data entry fields must allow for a dynamic font size controlled by the user outside of the mobile application (Settings->Accessibility->Large Text).
+7.	All data entry Views must enable a scrolling window to allow for text to dynamically grow and shrink according to the Accessibility text size.
+8.	All data entry Views must retain any data entry field values while in the data entry flow, i.e.; Previous and Next.
+9.	Starting a new data entry flow (step 1) would clear all data entry fields to their default or initial values.
+
+You are free to design the structure of the JSON string that describes each View and associated data entry fields.  Ideally this JSON string will be delivered to the mobile application via a web service, but for this POC you can hard code within the mobile application.
