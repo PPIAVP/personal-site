@@ -1,0 +1,40 @@
+[
+  {
+    "viewName": "View A",
+    "fields": [
+      {
+        "type": "text-short",
+        "text": "Name",
+        "required": true
+      },
+      {
+        "type": "boolean",
+        "text": "Did you enjoy your weekend?",
+        "required": true
+      },
+      {
+        "type": "text-long",
+        "text": "Why or why not?",
+        "required": false
+      }
+
+    ]
+  },
+  {
+    "viewName": "View B",
+    "fields": [
+      {
+        "type": "choice-single",
+        "text": "Favorite fruit",
+        "options": ["apple","orange","banana","watermelon"],
+        "required": true
+      },
+      {
+        "type": "choice-multiple",
+        "text": "Favorite animals",
+        "options": ["dog","cat","hamster"],
+        "required": false
+      }
+    ]
+  }
+]
